@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nozima Beauty Salon</title>
+  <meta name="description" content="Nozima go'zallik saloni uchun premium va zamonaviy bron qilish sayti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__ring"></div>
+      <p>Nozima Beauty Salon</p>
+    </div>
+  </div>
+
+  <div class="bg-blur bg-blur--one"></div>
+  <div class="bg-blur bg-blur--two"></div>
+
+  <header class="header" id="top">
+    <div class="container nav">
+      <a href="#top" class="brand">
+        <span class="brand__badge">N</span>
+        <div>
+          <strong>Nozima</strong>
+          <small>Beauty Salon</small>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menu ochish">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#booking">Bron</a>
+        <a href="#contact">Aloqa</a>
+        <button class="btn btn--ghost" id="adminOpenBtn">Admin</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <span class="eyebrow">Premium go‘zallik makoni</span>
+          <h1>Nozima — nafislik, uslub va ishonch uyg‘unligi</h1>
+          <p>
+            Maftuna Sayfidinova boshchiligidagi salonimizda soch, tirnoq va makiyaj xizmatlari
+            elegant muhitda, zamonaviy yondashuv bilan taqdim etiladi.
+          </p>
+          <div class="hero__actions">
+            <a href="#booking" class="btn btn--primary btn--glow">Bron qilish</a>
+            <a href="#services" class="btn btn--secondary">Xizmatlarni ko‘rish</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong>09:00–20:00</strong><span>Ish vaqti</span></div>
+            <div><strong>Premium</strong><span>Servis darajasi</span></div>
+            <div><strong>100%</strong><span>Elegant UI</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal-delay">
+          <div class="hero-card floating-card">
+            <div class="hero-card__shine"></div>
+            <div class="hero-card__top">
+              <span class="pill">Luxury Beauty</span>
+              <span class="dot"></span>
+            </div>
+            <h3>Glow with confidence</h3>
+            <p>Soch, tirnoq va makiyaj xizmatlari yagona premium makonda.</p>
+            <div class="service-tags">
+              <span>Hair</span>
+              <span>Nails</span>
+              <span>Makeup</span>
+            </div>
+          </div>
+          <div class="glass-card glass-card--small">
+            <strong>Owner</strong>
+            <span>Maftuna Sayfidinova</span>
+          </div>
+          <div class="glass-card glass-card--accent">
+            <strong>Highlight</strong>
+            <span>Booking always available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Xizmatlar</span>
+          <h2>Go‘zallikni ta’kidlovchi professional xizmatlar</h2>
+          <p>Har bir xizmat nafis estetika va mijoz qulayligini hisobga olgan holda tashkil qilingan.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card__icon">✂️</div>
+            <h3>Soch xizmati</h3>
+            <p>Kesish, styling, fen, premium parvarish va zamonaviy hair look yaratish.</p>
+            <ul>
+              <li>Ayollar soch turmagi</li>
+              <li>Styling & volume</li>
+              <li>Parvarish maskalari</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal-delay">
+            <div class="service-card__icon">💅</div>
+            <h3>Tirnoq xizmati</h3>
+            <p>Elegant manikyur va pedikyur dizaynlari bilan nozik uslub yaratiladi.</p>
+            <ul>
+              <li>Classic manikyur</li>
+              <li>Gel polish</li>
+              <li>Premium nail design</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">💄</div>
+            <h3>Makiyaj</h3>
+            <p>Kundalik, tadbir va bridal makiyaj uchun professional yondashuv.</p>
+            <ul>
+              <li>Natural glam</li>
+              <li>Evening makeup</li>
+              <li>Event / bridal look</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__content reveal">
+          <span class="eyebrow">Bron qilish</span>
+          <h2>Qulay vaqtni hozir band qiling</h2>
+          <p>
+            Foydalanuvchi ism, telefon va vaqtni tanlaydi. Band yoki admin tomonidan bloklangan vaqtlar avtomatik ravishda tanlovdan olib tashlanadi.
+          </p>
+          <div class="info-boxes">
+            <div class="info-box">
+              <strong>Vaqt oralig‘i</strong>
+              <span>09:00 dan 20:00 gacha</span>
+            </div>
+            <div class="info-box">
+              <strong>Saqlash usuli</strong>
+              <span>LocalStorage fake database</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-card reveal reveal-delay">
+          <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+              <label for="name">Ism</label>
+              <input id="name" name="name" type="text" placeholder="Ismingizni kiriting" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon</label>
+              <input id="phone" name="phone" type="tel" placeholder="+998 90 123 45 67" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Vaqt</label>
+              <select id="time" name="time" required>
+                <option value="">Bo‘sh vaqtni tanlang</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--glow btn--full">✨ Bron qilish</button>
+            <p class="form-note">Band vaqtlar qayta tanlanmaydi. Admin kerakli vaqtlarni bloklashi mumkin.</p>
+            <div id="bookingMessage" class="message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Aloqa</span>
+          <h2>Biz bilan bog‘laning</h2>
+          <p>Nozima saloniga tashrifingizni bugundan rejalashtiring.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Salon ma’lumotlari</h3>
+            <div class="contact-item">
+              <span>👩‍💼 Egasi</span>
+              <strong>Maftuna Sayfidinova</strong>
+            </div>
+            <div class="contact-item">
+              <span>📞 Telefon</span>
+              <a href="tel:+998935437258">+998 93 543 72 58</a>
+            </div>
+            <div class="contact-item">
+              <span>✉️ Email</span>
+              <a href="mailto:maftuna.ms@gmail.com">maftuna.ms@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card reveal reveal-delay">
+            <h3>Nega aynan Nozima?</h3>
+            <ul class="feature-list">
+              <li>Premium va elegant muhit</li>
+              <li>Responsive, tez va zamonaviy sahifa</li>
+              <li>Qulay booking tizimi</li>
+              <li>Admin boshqaruvi bilan bron nazorati</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Nozima Beauty Salon. Barcha huquqlar himoyalangan.</p>
+      <a href="#top">Yuqoriga qaytish ↑</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="adminModal" aria-hidden="true">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__dialog">
+      <button class="modal__close" id="adminCloseBtn" aria-label="Yopish">×</button>
+
+      <div id="adminLoginView">
+        <div class="modal__header">
+          <span class="eyebrow">Admin panel</span>
+          <h3>Login</h3>
+          <p>Bronlarni boshqarish uchun parolni kiriting.</p>
+        </div>
+        <form id="adminLoginForm" class="admin-login-form">
+          <div class="form-group">
+            <label for="adminPassword">Parol</label>
+            <input id="adminPassword" type="password" placeholder="Parol" required />
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Kirish</button>
+          <div id="adminLoginMessage" class="message"></div>
+        </form>
+      </div>
+
+      <div id="adminPanelView" class="hidden">
+        <div class="modal__header modal__header--between">
+          <div>
+            <span class="eyebrow">Admin panel</span>
+            <h3>Bron boshqaruvi</h3>
+          </div>
+          <button id="adminLogoutBtn" class="btn btn--ghost">Chiqish</button>
+        </div>
+
+        <div class="admin-grid">
+          <section class="admin-section">
+            <h4>Vaqtni bloklash</h4>
+            <form id="blockTimeForm" class="inline-form">
+              <select id="blockTimeSelect" required>
+                <option value="">Vaqt tanlang</option>
+              </select>
+              <button type="submit" class="btn btn--secondary">Bloklash</button>
+            </form>
+            <div id="blockedList" class="token-list"></div>
+          </section>
+
+          <section class="admin-section">
+            <h4>Bronlar ro‘yxati</h4>
+            <div id="bookingsList" class="booking-list"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
